@@ -1,11 +1,14 @@
 ---
 import Layout from '../components/Layout.astro'
+import { Image } from 'astro:assets';
+import hero from '../images/hero.jpeg';
 ---
 
 <Layout title="Home - Turbin Engines">
 	<div class="bg-blue-900 text-white py-16 px-6">
 		<div class="container mx-auto flex flex-col md:flex-row-reverse items-center justify-center md:space-x-4">
-			<img src="../../public/images/hero.jpeg" alt="Turban Engines" class="w-full md:w-1/4 max-w-4xl md:ml-8 mb-8 rounded-lg shadow-md">
+			<!--<img src="../images/hero.jpeg" alt="Turban Engines" class="w-full md:w-1/4 max-w-4xl md:ml-8 mb-8 rounded-lg shadow-md">-->
+			<Image src={hero} alt="Turban Engines" class="w-full md:w-1/4 max-w-4xl md:ml-8 mb-8 rounded-lg shadow-md" />
 			<div>
 				<h1 class="text-5xl font-extrabold leading-tight mb-4">Unleash the Power of Turban Engines</h1>
 				<p class="text-lg mb-8">Experience the next level of aviation with our cutting-edge turbine technology.</p>

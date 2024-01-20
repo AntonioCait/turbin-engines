@@ -1,5 +1,9 @@
 ---
 import Layout from "../components/Layout.astro";
+import { Image } from 'astro:assets';
+import engine1 from '../images/engine1.jpeg';
+import engine2 from '../images/engine2.jpeg';
+import engine3 from '../images/engine3.jpeg';
 ---
 
 <Layout title="Features - Turbin Engines">
@@ -17,7 +21,8 @@ import Layout from "../components/Layout.astro";
             <div class="flex flex-col items-center">
                 <h2 class="text-4xl font-bold text-gray-800 mb-6">Efficiency Redefined</h2>
                 <p class="text-gray-600 text-lg mb-10">Turbin engines are designed for maximum efficiency, providing optimal performance while minimizing fuel consumption. The innovative design and advanced technology contribute to enhanced fuel efficiency, making Turban engines a cost-effective solution for aircraft owners.</p>
-                <img src="../../public/images/engine1.jpeg" alt="Efficiency Image" class="w-full max-w-3xl rounded-lg shadow-md">
+                <!--<img src="../images/engine1.jpeg" alt="Efficiency Image" class="w-full max-w-3xl rounded-lg shadow-md">-->
+                <Image src={engine1} alt="Efficiency Image" class="w-full max-w-3xl rounded-lg shadow-md" />
             </div>
         </div>
     </div>
@@ -28,7 +33,8 @@ import Layout from "../components/Layout.astro";
             <div class="flex flex-col items-center">
                 <h2 class="text-4xl font-bold text-gray-800 mb-6">Advanced Technology Integration</h2>
                 <p class="text-gray-600 text-lg mb-10">Turbin engines incorporate state-of-the-art technology to deliver reliability, durability, and unmatched performance in aviation. The integration of advanced systems and sensors ensures precise control, efficient power delivery, and a smooth flight experience for pilots and passengers alike.</p>
-                <img src="../../public/images/engine2.jpeg" alt="Technology Image" class="w-full max-w-3xl rounded-lg shadow-md">
+                <!--<img src="../images/engine2.jpeg" alt="Technology Image" class="w-full max-w-3xl rounded-lg shadow-md">-->
+                <Image src={engine2} alt="Technology Image" class="w-full max-w-3xl rounded-lg shadow-md" />
             </div>
         </div>
     </div>
@@ -39,7 +45,8 @@ import Layout from "../components/Layout.astro";
             <div class="flex flex-col items-center">
                 <h2 class="text-4xl font-bold text-gray-800 mb-6">Sleek and Modern Design</h2>
                 <p class="text-gray-600 text-lg mb-10">The Turbin engines not only excel in performance but also feature a modern and sleek design. The aerodynamic design enhances the overall efficiency and performance of the aircraft. Turbin engines not only power your flight but also add a touch of elegance to your aircraft's appearance.</p>
-                <img src="../../public/images/engine3.jpeg" alt="Design Image" class="w-full max-w-3xl rounded-lg shadow-md">
+                <!--<img src="../images/engine3.jpeg" alt="Design Image" class="w-full max-w-3xl rounded-lg shadow-md">-->
+                <Image src={engine3} alt="Design Image" class="w-full max-w-3xl rounded-lg shadow-md" />
             </div>
         </div>
     </div>
