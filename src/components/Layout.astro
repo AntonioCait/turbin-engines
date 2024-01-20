@@ -1,0 +1,26 @@
+---
+import Navbar from '../components/Navbar.astro'
+import Footer from "./Footer.astro";
+let { title } = Astro.props
+
+---
+
+
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{title}</title>
+</head>
+  <body>
+    <div class="min-w-full">
+      <Navbar />
+      <!--border radius-->
+      <main class="">
+        <slot />
+      </main>
+      <Footer />
+    </div>
+  </body>
+</html>
